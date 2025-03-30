@@ -507,12 +507,14 @@ jobs:
         fi && \
 
         # Set up build environment
-        export BUILD_USERNAME=${{ github.actor }} ; \
+        export BUILD_USERNAME=devil \
         export BUILD_HOSTNAME=crave ; \
         source build/envsetup.sh && \
+        echo "======project========" \
 
-        echo "Repository: ${{ github.repository }}"; \
-        echo "Run ID: ${{ github.run_id }}"; \
+        echo "Repository: crave_aosp_builder \
+        echo "Run ID: devil \
+        echo "nigger your project running \
 
         # Build the ROM
         $LUNCH && \
